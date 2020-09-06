@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+ADMIN-LOGIN
+{% endblock %}
+
+{% block content %}
+
+<section id="container2">
+    <p class ="col-sm-12 h1 text-center" ><font color="white">Hello! Admin</font></p>
+    <a href ="{% url 'admin_logout' %}" class = "btn btn-warning s1">Logout</a>
+</section>
+
+<a href="{% url 'enrolled' %}"><input type="submit" value="Detail of enrolled Students" class="btn btn-warning ml-3 mt-3"></a>
+<a href="{% url 'queries' %}"><input type="submit" value="Student Queries" class="btn btn-warning ml-3 mt-3"></a>
+
+
+
+
+
+{% endblock %}

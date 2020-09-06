@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Student Queries
+{% endblock %}
+
+{% block content %}
+
+<div id="container20">
+     {% if messages %}
+<ul>
+	{% for message in messages %}
+	   <li id="la1">{{ message }}</li>
+	{% endfor %}
+</ul>
+{% endif %}
+ <form method="POST">
+<b id='k8'>Enter your Username :</b>
+  <input type='text' id='e1' name="Username" size="50W" required>
+  <br><br>
+  <b id='k8'>Enter your new Password :</b>
+  <input type='text' id='e1' name="password" size="50" required>
+  <a href="{% url 'forgot_adminpass' %}"><input id="k9" type="submit" value="Change Password"></a>
+
+ </form>
+    <a href="{% url 'home' %}"><input id="k10" type="submit" value="Done"></a>
+  <br><br>
+</div>
+
+{% endblock %}

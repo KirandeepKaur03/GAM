@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+{% load static %}
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{% static 'Css.css' %}">
+
+   <link rel="icon" href="{% static 'Image/Logo.jpg' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'Style/css/all.min.css' %}">
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="/static/engine1/style.css" />
+<script type="text/javascript" src="/static/engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous">
+</head>
+
+
+<body>
+    <div id="backdrop"></div>
+
+    <section id='container1'>
+      <img id="img_1" src="{% static 'Image\Logo.jpg' %}" width="100px" height="100px">
+      <button id='a'>NEVER STOP<br>LEARNING</button>
+      <i class="fas fa-ellipsis-v" id="b"></i>
+      <i class="fas fa-ellipsis-v" id="c"></i>
+      <i class="fas fa-ellipsis-v" id="d"></i>
+      <a href="{% url 'About_us' %}"><button id='e'>About Us</button></a>
+      <a href="{% url 'About_us' %}#r12"><button id='f'>Contact Us</button></a>
+      <a href="{% url 'About_us' %}#r13"><button id='h'>Careers</button></a>
+      <a href="mailto: gaganmathematics@gmail.com"><button id='i'><i class="fas fa-envelope"></i> EMAIL US<br>gaganmathematics@gmail.com</button></a>
+      <a href="tel:+91 9464945293"><button id='j'><i class="fas fa-phone"></i> CALL US TODAY<br>+91 9464945293</button></a>
+
+    </section>
+
+{% block content %}
+{% endblock %}
+
+</body>
+<script src="{% static 'Script/JS.js' %}"> </script>
+</html>

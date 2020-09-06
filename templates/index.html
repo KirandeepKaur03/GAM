@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Gagan Mathematics-Never Stop Learning
+{% endblock %}
+
+{% block content %}
+{% load static %}
+<section id='container2'>
+      <div id="dropdown">
+      <a href="{% url 'Classes_Taught' %}#r10"><button id='n' class="btn btn-secondary dropdown-toggle" >CLASSES TAUGHT</button></a>
+      <div id="o">
+        <ul>
+          <li><a href="">10th & 12th</a></li>
+          <li><a href="">BCA & MCA</a></li>
+          <li><a href="">B.Tech</a></li>
+          <li><a href="">B.Sc</a></li>
+        </ul>
+     </div>
+     </div>
+
+    <div id="dropdown">
+    <a href="{% url 'Classes_Taught' %}#r12"><button id='n2' class="btn btn-secondary dropdown-toggle" >WHY US</button></a>
+      <div id="q">
+        <ul>
+          <li><a href="{% url 'Classes_Taught' %}#r12-1">The Learning Difference</a></li>
+          <li><a href="{% url 'Classes_Taught' %}#r12-2">How we help</a></li>
+          <li><a href="{% url 'Classes_Taught' %}#r12-3">Dynamic Assessment</a></li>
+        </ul>
+     </div>
+    </div>
+
+    <div id="dropdown">
+    <a href="{% url 'Classes_Taught' %}#r13"><button id='n3' class="btn btn-secondary dropdown-toggle">TUTORING FAQ's</button></a>
+      <div id="q1">
+        <ul>
+          <li><a href="{% url 'Classes_Taught' %}#r13-1">Tuition Pricing</a></li>
+          <li><a href="{% url 'Classes_Taught' %}#r13-2">How to enrol</a></li>
+</ul>
+     </div>
+     </div>
+    <a href="{% url 'add_user_data' %}"><button id='r2'><i class="fas fa-edit"></i>&nbsp NEW STUDENT REGISTRATION </button></a>
+    <button id='r3' onclick="Toggle_LoginForm()">STUDENT LOGIN &nbsp<i class="fas fa-arrow-right"></i></button>
+    <button id='r48' onclick="Toggle_adminForm()">ADMIN LOGIN &nbsp<i class="fas fa-user-shield"></i></button>
+</section>
+
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+  <div class="ws_images"><ul>
+      <li><img src="/static/data1/images/1.jpg" alt="" title="" id="wows1_0"/>
+  </li>
+      <li><a href="http://wowslider.net"><img src="/static/data1/images/2.jpg" alt="css slideshow" title="" id="wows1_1"/></a></li>
+      <li><img src="/static/data1/images/3.jpg" alt="" title="" id="wows1_2"/></li>
+    </ul></div>
+    <div class="ws_bullets"><div>
+      <a href="#" title=""><span><img src="/static/data1/tooltips/1.jpg" alt=""/>1</span></a>
+      <a href="#" title=""><span><img src="/static/data1/tooltips/2.jpg" alt=""/>2</span></a>
+      <a href="#" title=""><span><img src="/static/data1/tooltips/3.jpg" alt=""/>3</span></a>
+    </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">javascript photo gallery</a> by WOWSlider.com v9.0</div>
+  <div class="ws_shadow"></div>
+  </div>
+  <script type="text/javascript" src="/static/engine1/wowslider.js"></script>
+  <script type="text/javascript" src="/static/engine1/script.js"></script>
+  <!-- End WOWSlider.com BODY section -->
+
+
+  <div id='container3'>
+  <h1 id='r4'>START ONLINE CLASSES NOW</h1>
+  <button id='r5' onclick="Toggle_Form()">ENROL <i class="fas fa-arrow-right"></i>  </button>
+  </div>
+
+
+
+
+<div id='container7'>
+    <form method="POST" action="{% url 'login' %}">
+        <br>
+<b id='k11'>Enter your Email :</b>
+<input type='text' id='e16' name="email" size="60" required>
+<br><br>
+<b id='k12'>Enter your Password:</b>
+<input type='text' id='e17' name="password" size="10" required>
+<br><br>
+ <a href="{% url 'forgot_password' %}">Forgot Password</a>
+<input type="submit" id='e4' value="Login">
+<input type="submit" id='e5' onclick="Toggle_LoginForm()" value="Cancel">
+    </form>
+</div>
+
+<div id='container73'>
+    <form method="POST" action="{% url 'admin_login' %}">
+        <br>
+<b id='k11'>Enter your Username :</b>
+<input type='text' id='e16' name="Username" size="60" required>
+<br><br>
+<b id='k12'>Enter your Password:</b>
+<input type='text' id='e17' name="password" size="10" required>
+<br><br>
+        <a href="{% url 'add_admin' %}">Add new Admin</a>
+        <br>
+        <a href="{% url 'forgot_adminpass' %}">Forgot Password</a>
+<input type="submit" id='e4' value="Login">
+<input type="submit" id='e5' onclick="Toggle_adminForm()" value="Cancel">
+    </form>
+</div>
+
+
+
+<div id='container6'>
+<h1 class="col-sm-12 h2 text-center mt-3" style ="color:white;"> Sample Video</h1>
+</div>
+
+<div id="container8">
+<iframe id='r16' width="1345px" height="500px"
+src="https://www.youtube.com/embed/GqdJFFvsZeE">
+</iframe>
+</div>
+<div id='container9'>
+  <p class="col-sm-12 h3 text-center mt-5" style="color:white;">Stay updated with our latest products and services</p>
+    <form method="POST" action="{% url 'Add_Subscriber' %}">
+  <input type='email' id='l2' name = 'email' size='40' placeholder="Enter your Email Id">
+  <input type="submit" value = "SUBSCRIBE" id='l3'>
+        </form>
+</div>
+<div id='container10'>
+  <div id='child1'>
+  <h2 id='m11'>CONTACT US</h2>
+  <br>
+  <h4 id='m2'>Gagan Mathematics, 1st floor </h4>
+  <h4 id='m21'>Saini Enterprises, Sirhind</h4>
+  <br>
+  <h4 id='m22'>+91 9888496210</h4>
+  <h4 id='m23'>gaganmathematics@gmail.com</h4>
+  <br>
+  <h4 id='m24'>http://GaganMathematics.in</h4>
+  </div>
+
+  <div id='child11'>
+  <h2 id='m1'>GOT QUERIES</h2>
+<br>
+  <h4 id='m25'>Send us your queries and we will try<br> to answer them as soon as possible.</h4>
+  <br>
+      <form method="POST" action="{% url 'Add_Queries' %}">
+  <textarea id='m26' name="message" cols='50' rows='2' placeholder="Message"></textarea>
+  <br><br>
+  <textarea id='m27' name="email" cols='50' rows='1' placeholder="Your Email"></textarea>
+  <br><br>
+  <input type="submit" id='m5' value="SUBMIT QUERY">
+      </form>
+  </div>
+
+</div>
+<div id='container11'>
+  <iframe id='k1' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.013446899546!2d76.38963431460827!3d30.633578597456665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39101c9139282635%3A0xd21f829ab1fe45f4!2sSaini%20Enterprises!5e0!3m2!1sen!2sin!4v1589699624901!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+
+
+{% endblock %}

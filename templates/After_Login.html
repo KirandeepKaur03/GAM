@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+
+<section id="container2">
+    <p class ="col-sm-12 h1 text-center" ><font color="white">Hello!  {{ request.user.username }}</font></p>
+    <a href ="{% url 'logout' %}" class = "btn btn-warning s1">Logout</a>
+    <p class = "s11">Last Login : {{ request.user.last_login }}</p>
+</section>
+
+<br> <br>
+<p class ="col-sm-12 h1 text-center" style="color:maroon" >Below are the video lessons. Happy Reading. </p>
+
+<div id="container18">
+    <div id="child18">
+        <p class ="col-sm-12 h3 text-center" style="color:blue" >Lecture Date : 15 September 2020 </p>
+<iframe id='r16' width="1345px" height="500px"
+src="https://www.youtube.com/embed/GqdJFFvsZeE">
+</iframe>
+</div>
+     <div id="child18">
+         <p class ="col-sm-12 h3 text-center" style="color:blue" >Lecture Date : 16 September 2020 </p>
+<iframe id='r16' width="1345px" height="500px"
+src="https://www.youtube.com/embed/MMC0iaz6bac">
+</iframe>
+     </div>
+
+     <div id="child18">
+         <p class ="col-sm-12 h3 text-center" style="color:blue" >Lecture Date : 17 September 2020 </p>
+<iframe id='r16' width="1345px" height="500px"
+src="https://www.youtube.com/embed/DJMH2F3GuIc">
+</iframe>
+     </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}

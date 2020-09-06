@@ -1,0 +1,1 @@
+web: gunicorn GAM.wsgi:application --log-file -

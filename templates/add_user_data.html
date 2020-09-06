@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}
+New Student Registration
+{% endblock %}
+
+{% block content %}
+<div id="container4">
+    <br>
+     {% if messages %}
+<ul>
+	{% for message in messages %}
+	   <li id="la1">{{ message }}</li>
+	{% endfor %}
+</ul>
+{% endif %}
+      <form method="POST" action="{% url 'add_user_data' %}">
+    <b id='k'>Enter User Name : </b>
+    <input type='text' size="60" id='e1' name = 'name' required>
+
+    <br><br>
+    <b id='k7'>Please Select Class :     </b>
+    <select id="Selclass" name = 'classes' required>
+      <option>Select</option>
+      <option>10th</option>
+      <option>12th</option>
+      <option>BCA & MCA</option>
+      <option>B.Sc & M.Sc</option>
+      <option>B.Tech</option>
+  </select>
+  <br><br>
+  <b id='k2'>Enter your Email :</b>
+  <input type='text' id='e1' name="email" size="60" required>
+  <br><br>
+  <b id='k3'>Enter your Mobile Number :</b>
+  <input type='text' id='e1' name="mobile" size="10" required>
+  <br><br>
+  <b id='k4'>Create your Password :</b>
+  <input type='text' id='e1' name="password" size="60" required>
+  <br><br>
+          <b id='k5'>Enter your Address:</b>
+  <input type='text' size="60" id='e1' name="address" required>
+<br><br>
+          <input type="submit" id='e2' value="Register Now!">
+
+
+
+</form>
+    <a href="{% url 'home' %}"><button id='e3'>Cancel</button></a>
+    </div>
+
+{% endblock %}
+

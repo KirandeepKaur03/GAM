@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}
+New Registration
+{% endblock %}
+
+{% block content %}
+
+
+      <form method="POST">
+    <b id='k'>Enter your full Name : </b>
+    <input type='text' size="60" id='e1' name = 'name' required>
+    <br><br>
+    <b id='k7'>Please Select Class :     </b>
+    <select id="Selclass" name = 'classes' required>
+      <option>Select</option>
+      <option>10th</option>
+      <option>12th</option>
+      <option>BCA & MCA</option>
+      <option>B.Sc & M.Sc</option>
+      <option>B.Tech</option>
+  </select>
+  <br><br>
+  <b id='k2'>Enter your Email :</b>
+  <input type='text' id='e11' name="email" size="60" required>
+  <br><br>
+  <b id='k3'>Enter your Mobile Number :</b>
+  <input type='text' id='e12' name="mobile" size="10" required>
+  <br><br>
+  <b id='k4'>Enter your Password :</b>
+  <input type='text' id='e13' name="password" size="60" required>
+  <br><br>
+  <b id='k5'>Re-enter Password :</b>
+  <input type='text' size="60" id='e14' name="re_password" size="60" required>
+  <br><br>
+  <b id='k6'>Enter the Captcha :</b>
+  <input type='text' id='e15' size="4" name="captcha" required>
+  <div id="Captcha">Captcha</div>
+
+  <br><br>
+  <input type="submit" id='e2' value="Register Now!">
+  <input type="submit" id='e3' onclick="Toggle_Form()" value="Cancel">
+      </form>
+{% endblock %}

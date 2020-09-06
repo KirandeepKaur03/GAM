@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}
+ADD-ADMIN
+{% endblock %}
+
+{% block content %}
+<div id="container41">
+    <br>
+     {% if messages %}
+<ul>
+	{% for message in messages %}
+	   <li id="la1">{{ message }}</li>
+	{% endfor %}
+</ul>
+{% endif %}
+      <form method="POST" action="{% url 'add_admin' %}">
+    <b id='k'>Enter Admin Name : </b>
+    <input type='text' size="60" id='e1' name = 'Username' required>
+
+    <br><br>
+  <b id='k4'>Create your Password :</b>
+  <input type='text' id='e1' name="password" size="60" required>
+<br><br>
+          <input type="submit" id='e2' value="Add Admin">
+</form>
+    <a href="{% url 'home' %}"><button id='e3'>Cancel</button></a>
+    </div>
+
+
+
+
+{% endblock %}

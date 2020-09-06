@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Update Record
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<section id="container2">
+<p class ="col-sm-12 h1 text-center" ><font color="white">Please edit below details as required.</font></p>
+</section>
+<br>
+<div class="row">
+    <div class="col-sm-12">
+        <form method="POST">
+
+
+            <div class="form-group">
+                <label for="username">Enter Name</label>
+                <input type="text" id="username" name="username" value="{{ data.username }}" class="form-control"  required>
+                <br>
+                <label for="email">Enter Email</label>
+                <input type="text" id="email" name="email" value="{{ data.email }}" class="form-control"  required>
+                <br>
+                <label for="address">Enter address</label>
+                <input type="text" id="address" name="address" value="{{ data.address }}" class="form-control"  required>
+                <br>
+                <label for="mobile">Enter Mobile</label>
+                <input type="text" id="mobile" name="mobile" value="{{ data.mobile }}" class="form-control"  required>
+            </div>
+            <input type="submit" value="Update Record" class="btn btn-primary">
+
+        </form>
+    </div>
+</div>
+{% endblock %}
