@@ -68,7 +68,7 @@ def add_user_data(request):
                             mobile=mobile)
             data.save()
             messages.success(request, 'Student saved successfully')
-            return render(request, 'add_user_data.html')
+            return redirect('/')
     return render(request, 'add_user_data.html')
 
 
