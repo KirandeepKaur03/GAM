@@ -7,13 +7,7 @@ Gagan Mathematics-Never Stop Learning
 {% block content %}
 {% load static %}
 <section id='container2'>
-    {% if messages %}
-        {% for message in messages %}
-         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
 
-        {% endfor %}
-
-    {% endif %}
       <div id="dropdown">
       <a href="{% url 'Classes_Taught' %}#r10"><button id='n' class="btn btn-secondary dropdown-toggle" >CLASSES TAUGHT</button></a>
       <div id="o">

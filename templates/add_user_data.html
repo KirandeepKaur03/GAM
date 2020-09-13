@@ -5,15 +5,9 @@ New Student Registration
 {% endblock %}
 
 {% block content %}
+<div id="backdrop1"></div>
 <div id="container4">
     <br>
-       {% if messages %}
-        {% for message in messages %}
-         {% if message.tags %}  <script>alert("{{ message }}")</script> {% endif %}
-
-        {% endfor %}
-
-    {% endif %}
       <form method="POST" action="{% url 'add_user_data' %}">
     <b id='k'>Enter User Name : </b>
     <input type='text' size="60" id='e1' name = 'name' required>
@@ -48,6 +42,46 @@ New Student Registration
 </form>
     <a href="{% url 'home' %}"><button id='e3'>Cancel</button></a>
     </div>
+
+<div id="container42"></div>
+
+{% if messages %}
+        {% for message in messages %}
+{% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}
+    <script>
+let backdrop1=document.getElementById("backdrop1");
+function Toggle_Backdrop1()
+{
+  backdrop1.classList.toggle("visible");
+};
+        let cont42=document.getElementById("container42");
+        cont42.classList.toggle("visible");
+        Toggle_Backdrop1();
+        cont42.innerHTML  =`
+       <h3 id='h42'> {{ message }} </h3>
+        <a href="{% url 'home' %}"><button id='b42'> ok </button></a>
+       `;
+</script>
+{% else %}
+<script>
+let backdrop1=document.getElementById("backdrop1");
+function Toggle_Backdrop1()
+{
+  backdrop1.classList.toggle("visible");
+};
+        let cont42=document.getElementById("container42");
+        cont42.classList.toggle("visible");
+        Toggle_Backdrop1();
+        cont42.innerHTML  =`
+       <h3 id='h42'> {{ message }} </h3>
+        <a href="{% url 'add_user_data' %}"><button id='b42'> Try Again </button></a>
+       `;
+</script>
+{% endif %}
+
+{% endfor %}
+
+    {% endif %}
 
 {% endblock %}
 

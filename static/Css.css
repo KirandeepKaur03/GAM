@@ -257,19 +257,7 @@ li{
     padding : 10px 20px 10px 20px;
     margin : -45px 2px 2px 920px;
 }
-#container4{
-    position : absolute;
-    border : 1px solid black;
-    z-index : 999;
-    width : 50%;
-    height : 70%;
-    top : 20%;
-    left : 25%;
-    background-color : white;
-    border-radius : 10px;
-    margin : 0 auto;
-    
-}
+
 
 @keyframes fade-slide-in {
 	from {
@@ -281,7 +269,7 @@ li{
   }
 
 #k,#k2,#k3,#k4,#k5,#k6,#k7{
-    color :red;
+    color : blue;
     padding : 10px 10px 10px 10px;
 }
 
@@ -297,7 +285,7 @@ li{
 #e2{
     position : absolute;
     color :white;
-    background : red;
+    background : blue;
     border-radius : 5px;
     left : 40%;
     padding : 5px 10px 5px 10px;
@@ -305,7 +293,7 @@ li{
 }
 #e3{
     position : absolute;
-    color :red;
+    color :blue;
     background : white;
     border-radius : 5px;
     left : 60%;
@@ -539,8 +527,8 @@ color : white;
     position : absolute;
     border : 1px solid black;
     width : 50%;
-    height : 75%;
-    top : 25%;
+    height : 70%;
+    top : 22%;
     left : 25%;
     background-color : white;
     border-radius : 10px;
@@ -592,5 +580,49 @@ border-radius : 5px;
     border-radius : 10px;
     margin : 0 auto;
 }
+#container42{
+    position : absolute;
+    border : 1px solid black;
+    z-index : 999;
+    width : 40%;
+    height : 40%;
+    top : 30%;
+    left : 30%;
+    background-color : blue;
+    color : white;
+    border-radius : 10px;
+    display : none;
+    margin : 0 auto;
+    }
+    #container42.visible
+    {
+     display:block;
+     animation:fade-slide-in 0.3s ease-out forwards;
+}
+#backdrop1 {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background:  rgba(0, 0, 0, 0.85);
+	z-index: 500;
+	display: none;
+ }
 
-
+#backdrop1.visible {
+	display: block;
+}
+#h42{
+padding : 5px 10px 5px 10px;
+margin-top : 40px;
+text-align : center;
+}
+#b42{
+position : relative;
+margin : 20px 0px 0px 230px ;
+padding : 5px 10px 5px 10px;
+color : blue;
+background-color : white;
+border-radius : 5px;
+}

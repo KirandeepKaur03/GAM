@@ -67,8 +67,7 @@ def add_user_data(request):
                             password=password, address=address,
                             mobile=mobile)
             data.save()
-            messages.success(request, 'Student saved successfully')
-            return redirect('/')
+            messages.success(request, 'Student saved successfully. You can now login with your login credentials.')
     return render(request, 'add_user_data.html')
 
 
