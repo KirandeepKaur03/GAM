@@ -26,7 +26,7 @@
 
 
 <body>
-{% load static %}
+    {% load static %}
     <div id="backdrop"></div>
 
     <section id='container1'>
@@ -41,11 +41,16 @@
       <a href="mailto: gaganmathematics@gmail.com"><button id='i'><i class="fas fa-envelope"></i> EMAIL US<br>gaganmathematics@gmail.com</button></a>
       <a href="tel:+91 9464945293"><button id='j'><i class="fas fa-phone"></i> CALL US TODAY<br>+91 9464945293</button></a>
 
+<div class="container99">
+             <i class="fas fa-cloud-sun-rain fa-2x"></i>
+                <div class="temperature"><p>-°C</p></div>
+                <div class="location"><p>-</p></div>
+</div>
     </section>
 
 {% block content %}
 {% endblock %}
-
-</body>
 <script src="{% static 'Script/JS.js' %}"> </script>
+</body>
+
 </html>

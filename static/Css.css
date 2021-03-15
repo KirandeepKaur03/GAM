@@ -76,7 +76,7 @@ li{
 }
 
 #i{position : absolute;
-    margin-left  : 700px;
+    margin-left  : 570px;
     margin-top : 40px;
     color : rgb(3, 3, 182);
     font-size: 20;
@@ -87,7 +87,7 @@ li{
 
 #j{
     position : absolute;
-    margin-left  : 950px;
+    margin-left  : 800px;
     margin-top : 40px;
     width : 200px;
     color : rgb(197, 9, 9);
@@ -625,4 +625,29 @@ padding : 5px 10px 5px 10px;
 color : blue;
 background-color : white;
 border-radius : 5px;
+}
+
+
+.container99{
+    display : flex;
+    flex-direction: row;
+    position : absolute;
+    margin-left  : 1150px;
+    margin-top:-80px;
+    width : 200px;
+    
+    font-size: 20;
+    outline : none;
+
+    
+}
+
+
+.temperature{
+    padding : 5px 0px 0px 10px;
+    color :rgb(3, 3, 182);
+}
+.location{
+    padding : 5px 0px 0px 10px;
+    color :rgb(3, 3, 182);
 }

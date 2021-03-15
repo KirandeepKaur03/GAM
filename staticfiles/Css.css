@@ -1,0 +1,610 @@
+﻿*{
+    box-sizing: border-box;
+    margin : 0;
+    padding : 0;
+    font : sans_serif;
+}
+Button{
+    border : none;
+    cursor : pointer;
+    outline : none;
+}
+a:link{
+    text-decoration: none;
+}
+input
+{
+outline : none;
+}
+a:hover{
+    color : red;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+#container1{
+    border : 1px solid white;
+    width : 1345px;
+    height : 130px;
+    margin : 0 auto;
+}
+#img_1{
+    margin : 10px;
+}
+#a{
+    position : absolute;
+    margin: 40px 10px 10px 10px;
+    background: white;
+    color: rgb(82, 79, 79);
+    outline : none;
+}
+#b{
+    position : absolute;
+    margin : 40px 10px 10px 150px;
+}
+#c{
+    position : absolute;
+    margin : 57px 10px 10px 150px;
+}
+#d{
+    position : absolute;
+    margin : 74px 10px 10px 150px;
+}
+#e{
+    position : absolute;
+    margin : 50px 10px 10px 180px;
+    font-size: 15;
+    background: white;
+    outline : none;
+}
+#f{
+    position : absolute;
+    margin : 50px 10px 10px 280px;
+    font-size: 15;
+    background: white;
+    outline : none;
+}
+#h{
+    position : absolute;
+    margin : 50px 10px 10px 400px;
+    font-size: 15;
+    background: white;
+    outline : none;
+}
+
+#i{position : absolute;
+    margin-left  : 700px;
+    margin-top : 40px;
+    color : rgb(3, 3, 182);
+    font-size: 20;
+    background-color: white;
+    outline: none;
+
+}
+
+#j{
+    position : absolute;
+    margin-left  : 950px;
+    margin-top : 40px;
+    width : 200px;
+    color : rgb(197, 9, 9);
+    font-size: 20;
+    outline : none;
+    background-color: white;
+    
+
+}
+
+
+#container2{
+    border : 1px solid blue;
+    width : 1345px;
+    height : 70px;
+    background-color: blue;
+    z-index :1;
+    margin : 0 auto;
+}
+#dropdown, #dropdown1, #dropdown2, #dropdown3{
+    position : relative;
+    z-index : 100;
+}
+#n
+{   position : absolute;
+    margin : 8px 1px 5px 10px;
+    padding : 13px 10px 13px 10px;
+    background : blue;
+    color : white;
+    border : none;
+    outline : none;
+    display : inside;
+}
+#n2
+{   position : absolute;
+    margin: 8px 1px 5px 215px;
+    padding : 13px 10px 13px 10px;
+    background : blue;
+    color : white;
+    border : none;
+    outline : none;
+}
+#n3
+{   position : absolute;
+    margin: 8px 1px 5px 350px;
+    padding : 13px 10px 13px 10px;
+    background : blue;
+    color : white;
+    border : none;
+    outline : none;
+}
+#n5
+{   position : absolute;
+    margin: 8px 1px 5px 570px;
+    padding : 13px 10px 13px 10px;
+    background : blue;
+    color : white;
+    border : none;
+    outline : none;
+}
+
+#n:hover,#n2:hover,#n3:hover,#n5:hover{
+    background-color:navy;
+}
+#o{
+    position : absolute;
+    margin-left : 10px; 
+    margin-top :60px;
+    width : 10%;
+    padding : 2px 2px 2px 2px;
+    font-weight : bold;
+    display : none;
+    background-color: navy;
+
+}
+
+#q{
+    position : absolute;
+    /* border : 1px solid white; */
+    margin-left : 215px;
+    margin-top :60px;
+    width : 20%;
+    color : blue;
+    padding : 2px 2px 2px 2px;
+    font-weight : bold;
+    display : none;
+    background-color: navy;
+}
+#q1{
+    position : absolute;
+    /* border : 1px solid white; */
+    margin-left : 350px;
+    margin-top :60px;
+    width : 10%;
+    color : blue;
+    padding : 2px 2px 2px 2px;
+    font-weight : bold;
+    display : none;
+    background-color: navy;
+}
+
+#r1{
+    position : absolute;
+    /* border : 1px solid white; */
+    margin-left : 570px;
+    margin-top :60px;
+    width : 20%;
+    color : white;
+    padding : 2px 2px 2px 2px;
+    font-weight : bold;
+    display : none;
+    background-color: navy;
+}
+#o a, #p a,#q a,#q1 a,#r a,#r1 a{
+    text-decoration: none;
+    color : white;
+}
+#o a:hover,#p a:hover,#q a:hover,#q1 a:hover,#r a:hover,#r1 a:hover{
+    color : red;
+}
+#dropdown:hover #o{display: block;}
+#dropdown:hover #p{display: block;}
+#dropdown:hover #q{display: block;}
+#dropdown:hover #q1{display: block;}
+#dropdown:hover #r{display: block;}
+#dropdown:hover #r1{display: block;}
+
+#r2{
+    position : absolute;
+    margin : 13px 1px 5px 640px;
+    color : white;
+    background : red;
+    border-radius: 5px;
+    padding : 10px 20px 10px 20px;
+}
+#r3{
+    position : absolute;
+    margin: 13px 1px 5px 940px;
+    padding : 10px 20px 10px 20px;
+    color : brown;
+    background : yellow;
+    border-radius: 5px;
+}
+#r48{
+    position : relative;
+    margin: 13px 1px 5px 1140px;
+    padding : 10px 20px 10px 20px;
+    color : brown;
+    background : yellow;
+    border-radius: 5px;
+}
+#container3{
+    border : 1px solid blue;
+    width : 1345px;
+    height : 150px;
+    background : blue;
+    margin : 0 auto;
+}
+#r4{
+    margin: 50px 2px 2px 350px;
+    color : white;
+}
+#r5{
+    position : absolute;
+    background-color : red;
+    color : white;
+    padding : 10px 20px 10px 20px;
+    margin : -45px 2px 2px 920px;
+}
+#container4{
+    position : absolute;
+    border : 1px solid black;
+    z-index : 999;
+    width : 50%;
+    height : 70%;
+    top : 20%;
+    left : 25%;
+    background-color : white;
+    border-radius : 10px;
+    margin : 0 auto;
+    
+}
+
+@keyframes fade-slide-in {
+	from {
+	  transform: translateY(-5rem);
+	}
+	to {
+	  transform: translateY(0);
+	}
+  }
+
+#k,#k2,#k3,#k4,#k5,#k6,#k7{
+    color :red;
+    padding : 10px 10px 10px 10px;
+}
+
+#k1,#k11,#k12{
+    color :brown;
+    padding : 10px 10px 10px 10px;
+}
+
+#e1,#e11,#e12,#e13,#e14,#e15,#e16,#e17{
+    margin :5px 5px 5px 5px;
+}
+
+#e2{
+    position : absolute;
+    color :white;
+    background : red;
+    border-radius : 5px;
+    left : 40%;
+    padding : 5px 10px 5px 10px;
+
+}
+#e3{
+    position : absolute;
+    color :red;
+    background : white;
+    border-radius : 5px;
+    left : 60%;
+    padding : 5px 10px 5px 10px;
+    
+}
+#backdrop {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background:  rgba(0, 0, 0, 0.85);
+	z-index: 500;
+	display: none;
+ }
+  
+#backdrop.visible {
+	display: block;
+}
+
+#wowslider-container1{
+    z-index : -1;
+}
+#r9{
+    position: absolute;
+    top : 183%;
+}
+
+#container7{
+    position : absolute;
+    border : 1px solid black;
+    z-index : 999;
+    width : 50%;
+    height : 35%;
+    top : 30%;
+    left : 25%;
+    background-color : white;
+    border-radius : 10px;
+    display : none;
+    margin : 0 auto;
+    }
+#container7.visible
+    {
+     display:block;
+     animation:fade-slide-in 0.3s ease-out forwards;
+}
+
+#container73{
+    position : absolute;
+    border : 1px solid black;
+    z-index : 999;
+    width : 50%;
+    height : 45%;
+    top : 35%;
+    left : 28%;
+    background-color : white;
+    border-radius : 10px;
+    display : none;
+    margin : 0 auto;
+    }
+#container73.visible
+    {
+     display:block;
+     animation:fade-slide-in 0.3s ease-out forwards;
+}
+
+
+#e4{
+    position : absolute;
+    color :brown;
+    background : yellow;
+    border-radius : 5px;
+    left : 40%;
+    padding : 10px 20px 10px 20px;
+    }
+#e5{
+    position : absolute;
+    color :yellow;
+    background : brown;
+    border-radius : 5px;
+    left : 55%;
+    padding : 10px 20px 10px 20px;
+
+}    
+#r16{
+    margin : 0 auto;
+    
+}
+#container8{
+    /* border : 1px solid blue; */
+    width : 1345px;
+    height : auto;
+    margin : 0 auto;
+}
+#container9{
+    border : 1px solid blue;
+    width : 1345px;
+    height : 200px;
+    margin : 0 auto;
+    background : blue;
+}
+#l1{
+   color : white;
+   margin : 20px 5px 5px 400px;
+   font-size : 50;
+}
+#l2{
+    margin: 40px 0 0 400px;
+    padding : 5px 20px 5px 20px ;
+}
+#l3{
+    background :red;
+    color : white;
+    padding : 5px 20px 5px 1%;
+    border-radius : 5px;
+}
+#container10{
+
+    width : 1345px;
+    height : auto;
+    margin : 0 auto;
+    display: flex;
+    flex-direction :row;
+    justify-content:flex-start;
+    
+
+}
+#child1,#child11{
+    width: 600px;
+    margin: 30px;
+    text-align: center;
+}
+#m1,#m11{
+    color :red;
+    margin : 50px 5px 5px 5px;
+}
+#m2,#m21,#m22,#m23,#m24,#m25,#m26,#m27{
+    margin-left : 20px;
+    width : 500px;
+    
+}
+#m5{
+    margin-left : 20px;
+    color: white;
+    background : red;
+    padding : 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+#container11{
+    width : 1345px;
+    height : auto;
+    margin : 0 auto;
+}
+#k1{
+    width : 1345px;
+}
+#container12{
+    
+    width : 1345px;
+    height : 1000px;
+    margin : 0 auto;
+    display: flex;
+    flex-direction :column;
+    justify-content:flex-start;
+
+}
+#child2{
+    background-color:#f1f1f1;
+    margin: 10px;
+    
+}
+#r10,#r12,#r13,#r14{
+    color : white;
+    border : 1px solid blue;
+    padding: 30px 0px 30px 0px;
+    background-color:blue;
+    text-align: center;
+}
+#r11{
+  
+    margin : 30px auto;
+    font-size : 20;
+}
+#r12-1,#r12-2,#r12-3,#r13-1,#r13-2,#r14-1,#r14-2,#r14-3{
+  
+    margin : 30px auto;
+    font-size : 20;
+    list-style-type:disc;
+    color : black;
+}
+#container6{
+    border : 1px solid navy;
+    width : 1345px;
+    height : 100px;
+    background-color: navy;
+    margin : 0 auto;
+}
+#r15{
+    color :white;
+    margin-top : 2%;
+    margin-left : 40%;
+}
+.s1{
+position : relative;
+margin-top : -6%;
+margin-left : 85%;
+}
+.s11{
+position : relative;
+margin-top : -2.5%;
+margin-left : 80%;
+color : white;
+}
+
+#container18{
+    width : 1345px;
+    height : auto;
+    margin : 0 auto;
+    display: flex;
+    flex-direction :column;
+    justify-content:flex-start;
+}
+#child18{
+    width: 1345px;
+    margin: 30px;
+    text-align: center;
+}
+
+#container4{
+    position : absolute;
+    border : 1px solid black;
+    width : 50%;
+    height : 75%;
+    top : 25%;
+    left : 25%;
+    background-color : white;
+    border-radius : 10px;
+    margin : 0 auto;
+}
+#la1{
+color : blue;
+padding : 0px 0px 0px 10px;
+}
+
+#container20{
+    position : absolute;
+    border : 1px solid black;
+    width : 50%;
+    height : 35%;
+    top : 25%;
+    left : 25%;
+    background-color : white;
+    border-radius : 10px;
+    margin : 0 auto;
+    padding : 10px 0px 0px 5px;
+}
+#k9{
+position : absolute;
+left : 40%;
+top : 70%;
+padding : 5px 5px 5px 5px;
+background : blue;
+color: white;
+border-radius : 5px;
+}
+#k10{
+position : absolute;
+left : 65%;
+top : 70%;
+padding : 5px 5px 5px 5px;
+background : blue;
+color: white;
+border-radius : 5px;
+}
+#container41{
+    position : absolute;
+    border : 1px solid black;
+    width : 50%;
+    height : 35%;
+    top : 25%;
+    left : 25%;
+    background-color : white;
+    border-radius : 10px;
+    margin : 0 auto;
+}
+
+.container99{
+    display : flex;
+    flex-direction: row;
+}
+
+
+.temperature{
+    padding : 5px 0px 0px 5px;
+}
+.location{
+    padding : 5px 0px 0px 10px;
+}
+#fa1{
+    color : rgb(3, 3, 182);
+}
